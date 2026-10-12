@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vibecoding — Навигация</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #30363d;
+  }
+  .logo {
+    width: 40px; height: 40px;
+    background: #f85149;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #f0f6fc;
+  }
+  h1 span {
+    color: #8b949e;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .badge {
+    display: inline-block;
+    background: #21262d;
+    border: 1px solid #30363d;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #8b949e;
+    margin-left: 8px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card:hover {
+    border-color: #58a6ff;
+    background: #1c2128;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .card-icon {
+    font-size: 28px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #58a6ff;
+  }
+  .card-desc {
+    font-size: 13px;
+    color: #8b949e;
+    line-height: 1.5;
+  }
+  .card-file {
+    font-size: 12px;
+    color: #6e7681;
+    font-family: monospace;
+    margin-top: auto;
+  }
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #484f58;
+  }
+  @media (max-width: 500px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🔴</div>
+      <div>
+        <h1>vibecoding <span class="badge">Public</span></h1>
+      </div>
+    </header>
+
+    <div class="grid">
+      <a href="Qwen.html" class="card">
+        <div class="card-icon">🤖</div>
+        <div class="card-title">Qwen</div>
+        <div class="card-desc">AI-ассистент от Alibaba</div>
+        <div class="card-file"> Qwen.html</div>
+      </a>
+
+      <a href="RUFP.html" class="card">
+        <div class="card-icon">🇷🇺</div>
+        <div class="card-title">RUFP</div>
+        <div class="card-desc">Российская языковая модель</div>
+        <div class="card-file">📄 RUFP.html</div>
+      </a>
+
+      <a href="gigachat.html" class="card">
+        <div class="card-icon">🧠</div>
+        <div class="card-title">GigaChat</div>
+        <div class="card-desc">AI-ассистент от Сбера</div>
+        <div class="card-file">📄 gigachat.html</div>
+      </a>
+
+      <a href="z.html" class="card">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Z</div>
+        <div class="card-desc">Экспериментальный проект</div>
+        <div class="card-file">📄 z.html</div>
+      </a>
+    </div>
+
+    <footer>
+      Репозиторий vibecoding · 4 файла · Обновлено вчера
+    </footer>
+  </div>
+</body>
+</html>
